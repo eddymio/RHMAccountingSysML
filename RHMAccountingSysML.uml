@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_9u2H8OTyEeeQtPHkNDHvDw" name="RHMAccountingSysML">
     <ownedComment xmi:type="uml:Comment" xmi:id="_kL3jUOT6EeeQtPHkNDHvDw">
       <body>Block Definition Diagram&#xD;
@@ -40,8 +40,12 @@ interacting with the system&#xD;
       <ownedAttribute xmi:type="uml:Property" xmi:id="_KVl28OT8EeeQtPHkNDHvDw" name="Actor6" type="_LCYrgOT8EeeQtPHkNDHvDw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_QlvmYOT8EeeQtPHkNDHvDw" name="Server" type="_RE_uMOT8EeeQtPHkNDHvDw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Sy5acOT8EeeQtPHkNDHvDw" name="Device" type="_TOPSoOT8EeeQtPHkNDHvDw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OS2nkOXJEeel8bFcR7AX6w" name="Actor8" type="_QYEnoOXJEeel8bFcR7AX6w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j3LrsOXJEeel8bFcR7AX6w" name="Actor9" type="_kXEssOXJEeel8bFcR7AX6w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_zPvVsOT7EeeQtPHkNDHvDw" name="Administrator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_zPvVsOT7EeeQtPHkNDHvDw" name="Administrator">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qx6pMOXJEeel8bFcR7AX6w" general="_kXEssOXJEeel8bFcR7AX6w"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_29pK0OT7EeeQtPHkNDHvDw" name="Customer"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_5Ai2sOT7EeeQtPHkNDHvDw" name="Employee"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_73kuMOT7EeeQtPHkNDHvDw" name="Enterprise"/>
@@ -50,12 +54,48 @@ interacting with the system&#xD;
     <packagedElement xmi:type="uml:Actor" xmi:id="_LCYrgOT8EeeQtPHkNDHvDw" name="Supplier"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_RE_uMOT8EeeQtPHkNDHvDw" name="Server"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_TOPSoOT8EeeQtPHkNDHvDw" name="Mobile"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_KfPQQOT-EeeQtPHkNDHvDw" name="Acc Security Requirements">
-      <packagedElement xmi:type="uml:Class" xmi:id="_MC5wgOUAEeeQtPHkNDHvDw" name="Protection"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KfPQQOT-EeeQtPHkNDHvDw" name="Acc Security Requirements"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_b98i0OT-EeeQtPHkNDHvDw" name="Acc ERP Requirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ORWWQOXKEeel8bFcR7AX6w" annotatedElement="_H579sOXJEeel8bFcR7AX6w">
+        <body>&lt;p>Identification : Add journal entry Actors : User of the system with proper rights accesses Description : manual addition of entry to journal Date : 12/12/2017 Author : RHM Dialog : nominal senario : 1. theme selected 2. fill the form 3. submit to journal alternative scenario : 1. automatic addition&lt;/p>
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_H579sOXJEeel8bFcR7AX6w" name="Add Journal Entry"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4ZOzcOXJEeel8bFcR7AX6w" name="List Journal Entries"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_b98i0OT-EeeQtPHkNDHvDw" name="Acc ERP Requirements"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_zuFXMOT-EeeQtPHkNDHvDw" name="Acc CRM Requirements"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_H7NX0OT_EeeQtPHkNDHvDw" name="Security"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_H7NX0OT_EeeQtPHkNDHvDw" name="Security">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_MC5wgOUAEeeQtPHkNDHvDw" name="Protection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xlHYIOXFEeel8bFcR7AX6w" name="Accounting">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_78T1cOXFEeel8bFcR7AX6w" name="Journal"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_BwcXQOXGEeel8bFcR7AX6w" name="Journal addition">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ioTlIOXGEeel8bFcR7AX6w" name="Manual addition">
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_6V-UUOXGEeel8bFcR7AX6w" name="UserAdd"/>
+        </nestedClassifier>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_oxnswOXGEeel8bFcR7AX6w" name="RefineJournal" client="_BwcXQOXGEeel8bFcR7AX6w" supplier="_ioTlIOXGEeel8bFcR7AX6w"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-XqoIOXGEeel8bFcR7AX6w" name="SatisfyAddition" client="_6V-UUOXGEeel8bFcR7AX6w" supplier="_ioTlIOXGEeel8bFcR7AX6w"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_2rRuwOXHEeel8bFcR7AX6w" name="Admin"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_QYEnoOXJEeel8bFcR7AX6w" name="Accountant">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qJYpkOXJEeel8bFcR7AX6w" general="_kXEssOXJEeel8bFcR7AX6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_kXEssOXJEeel8bFcR7AX6w" name="User"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zh7tUOXJEeel8bFcR7AX6w" memberEnd="_zh7tU-XJEeel8bFcR7AX6w _zh7tVOXJEeel8bFcR7AX6w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zh7tUeXJEeel8bFcR7AX6w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zh7tUuXJEeel8bFcR7AX6w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zh7tU-XJEeel8bFcR7AX6w" name="add journal entry" type="_H579sOXJEeel8bFcR7AX6w" association="_zh7tUOXJEeel8bFcR7AX6w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zh7tVOXJEeel8bFcR7AX6w" name="user" type="_kXEssOXJEeel8bFcR7AX6w" association="_zh7tUOXJEeel8bFcR7AX6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6gPjQOXJEeel8bFcR7AX6w" name="association" memberEnd="_6gPjQ-XJEeel8bFcR7AX6w _6gPjROXJEeel8bFcR7AX6w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6gPjQeXJEeel8bFcR7AX6w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6gPjQuXJEeel8bFcR7AX6w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6gPjQ-XJEeel8bFcR7AX6w" name="list journal entries" type="_4ZOzcOXJEeel8bFcR7AX6w" association="_6gPjQOXJEeel8bFcR7AX6w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6gPjROXJEeel8bFcR7AX6w" name="user" type="_kXEssOXJEeel8bFcR7AX6w" association="_6gPjQOXJEeel8bFcR7AX6w"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-SGmAOTyEeeQtPHkNDHvDw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-SYS0OTyEeeQtPHkNDHvDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -120,4 +160,11 @@ interacting with the system&#xD;
   <Blocks:Block xmi:id="_pUnwYOT7EeeQtPHkNDHvDw" base_Class="_pUd_YOT7EeeQtPHkNDHvDw"/>
   <Requirements:Requirement xmi:id="_H7z0wOT_EeeQtPHkNDHvDw" base_Class="_H7NX0OT_EeeQtPHkNDHvDw" id="ACC_SEC_10" text="Authorized access only"/>
   <Requirements:Requirement xmi:id="_MC5wgeUAEeeQtPHkNDHvDw" base_Class="_MC5wgOUAEeeQtPHkNDHvDw" id="ACC_SEC_20" text="Protected information &amp; communication"/>
+  <Requirements:Requirement xmi:id="_xlaTEOXFEeel8bFcR7AX6w" base_Class="_xlHYIOXFEeel8bFcR7AX6w" id="ACC_ACC_10" text="ERP Chart (Europe/US)"/>
+  <Requirements:Requirement xmi:id="_78dmcOXFEeel8bFcR7AX6w" base_Class="_78T1cOXFEeel8bFcR7AX6w" id="ACC_ACC_11" text="Journal implementation&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_BwmIQOXGEeel8bFcR7AX6w" base_Class="_BwcXQOXGEeel8bFcR7AX6w" id="ACC_ACC_11" text="Addition to journal"/>
+  <Requirements:Requirement xmi:id="_iodWIOXGEeel8bFcR7AX6w" base_Class="_ioTlIOXGEeel8bFcR7AX6w" id="ACC_ACC_11_01" text="Manual addition to journal&#xD;&#xA;"/>
+  <Requirements:Refine xmi:id="_oyEYsOXGEeel8bFcR7AX6w" base_DirectedRelationship="_oxnswOXGEeel8bFcR7AX6w" base_Abstraction="_oxnswOXGEeel8bFcR7AX6w"/>
+  <Requirements:Satisfy xmi:id="_-X9jEOXGEeel8bFcR7AX6w" base_DirectedRelationship="_-XqoIOXGEeel8bFcR7AX6w" base_Abstraction="_-XqoIOXGEeel8bFcR7AX6w"/>
+  <ModelElements:Stakeholder xmi:id="_2rkpsOXHEeel8bFcR7AX6w" base_Classifier="_2rRuwOXHEeel8bFcR7AX6w"/>
 </xmi:XMI>
