@@ -5,9 +5,14 @@
 Interaction with the whole server instance</body>
   </ownedComment>
   <ownedComment xmi:type="uml:Comment" xmi:id="_PtQekO8VEee3Xu0cSAu_nA">
-    <body>Thirs part actors don't act directly with the system.&#xD;
+    <body>These types of actors don't act directly with the system.&#xD;
 They are more like a part involving an API on the server.&#xD;
 For instance, the system will provide API to let Worpdress use some functionalities.</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_NBd70O8XEee3Xu0cSAu_nA">
+    <body>ERP (Enterprise Resource Planning) implementing an accounting system along with a marketing and sales management system.&#xD;
+Will also include several modules such as statistics and Customer Relationship Management (CRM) tools.&#xD;
+</body>
   </ownedComment>
   <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator"/>
@@ -73,5 +78,24 @@ For instance, the system will provide API to let Worpdress use some functionalit
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_NKow0e8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_NKnisO8VEee3Xu0cSAu_nA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_NKow0u8VEee3Xu0cSAu_nA" name="magento" type="_xte4IO8UEee3Xu0cSAu_nA" association="_NKnisO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_luK7kO8WEee3Xu0cSAu_nA" name="Accounting">
+    <packagedElement xmi:type="uml:Package" xmi:id="_YWp18O8YEee3Xu0cSAu_nA" name="Journal"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cvO_wO8YEee3Xu0cSAu_nA" name="Asset"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_nckFIO8YEee3Xu0cSAu_nA" name="Analytic"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CZuPIO8ZEee3Xu0cSAu_nA" name="Journal"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EpGQwO8ZEee3Xu0cSAu_nA" name="Asset"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G8JRcO8ZEee3Xu0cSAu_nA" name="Analytic"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sBEdAO8WEee3Xu0cSAu_nA" name="Management System"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yR1QcO8WEee3Xu0cSAu_nA" name="Frontend"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZbdFYO8ZEee3Xu0cSAu_nA" name="Identification">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_wd9XsO8ZEee3Xu0cSAu_nA" annotatedElement="_ZbdFYO8ZEee3Xu0cSAu_nA">
+      <body>Identification of Company and its users&#xD;
+</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hv19cO8ZEee3Xu0cSAu_nA" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jpp-wO8ZEee3Xu0cSAu_nA" name="Registration"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_61DuYO8ZEee3Xu0cSAu_nA" name="Contact"/>
   </packagedElement>
 </uml:Model>
