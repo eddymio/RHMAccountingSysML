@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__ehbkO8TEee3Xu0cSAu_nA" name="uml-spe">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_30AxgO8UEee3Xu0cSAu_nA" annotatedElement="_fJIzMO8UEee3Xu0cSAu_nA">
+    <body>Main system actors&#xD;
+Interaction with the whole server instance</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_PtQekO8VEee3Xu0cSAu_nA">
+    <body>Thirs part actors don't act directly with the system.&#xD;
+They are more like a part involving an API on the server.&#xD;
+For instance, the system will provide API to let Worpdress use some functionalities.</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_mW2-IO8UEee3Xu0cSAu_nA" name="Accountant"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_n-ki0O8UEee3Xu0cSAu_nA" name="Sales"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_s5Oe8O8UEee3Xu0cSAu_nA" name="Supplier"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_uGrJgO8UEee3Xu0cSAu_nA" name="Bank"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wnoDUO8UEee3Xu0cSAu_nA" name="Wordpress"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_xte4IO8UEee3Xu0cSAu_nA" name="Magento"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_0aAIwO8UEee3Xu0cSAu_nA" name="Client"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Cviq8O8VEee3Xu0cSAu_nA" memberEnd="_CvlHMu8VEee3Xu0cSAu_nA _CvlHM-8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CvlHMO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CvlHMe8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CvlHMu8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_Cviq8O8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CvlHM-8VEee3Xu0cSAu_nA" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_Cviq8O8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DyadMO8VEee3Xu0cSAu_nA" memberEnd="_DybEQO8VEee3Xu0cSAu_nA _DybEQe8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DyadMe8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DyadMu8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DybEQO8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_DyadMO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DybEQe8VEee3Xu0cSAu_nA" name="accountant" type="_mW2-IO8UEee3Xu0cSAu_nA" association="_DyadMO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HzuWgO8VEee3Xu0cSAu_nA" memberEnd="_Hzu9ku8VEee3Xu0cSAu_nA _Hzu9k-8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hzu9kO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hzu9ke8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hzu9ku8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_HzuWgO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Hzu9k-8VEee3Xu0cSAu_nA" name="sales" type="_n-ki0O8UEee3Xu0cSAu_nA" association="_HzuWgO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JuFxcO8VEee3Xu0cSAu_nA" memberEnd="_JuGYgu8VEee3Xu0cSAu_nA _JuG_kO8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JuGYgO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JuGYge8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JuGYgu8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_JuFxcO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JuG_kO8VEee3Xu0cSAu_nA" name="client" type="_0aAIwO8UEee3Xu0cSAu_nA" association="_JuFxcO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Kp-K4O8VEee3Xu0cSAu_nA" memberEnd="_Kp-x8e8VEee3Xu0cSAu_nA _Kp-x8u8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kp-K4e8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Kp-x8O8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Kp-x8e8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_Kp-K4O8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Kp-x8u8VEee3Xu0cSAu_nA" name="supplier" type="_s5Oe8O8UEee3Xu0cSAu_nA" association="_Kp-K4O8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LkVhYO8VEee3Xu0cSAu_nA" memberEnd="_LkWIcu8VEee3Xu0cSAu_nA _LkWIc-8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LkWIcO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LkWIce8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LkWIcu8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_LkVhYO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LkWIc-8VEee3Xu0cSAu_nA" name="bank" type="_uGrJgO8UEee3Xu0cSAu_nA" association="_LkVhYO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MYT8AO8VEee3Xu0cSAu_nA" memberEnd="_MYUjEu8VEee3Xu0cSAu_nA _MYUjE-8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MYUjEO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MYUjEe8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MYUjEu8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_MYT8AO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MYUjE-8VEee3Xu0cSAu_nA" name="wordpress" type="_wnoDUO8UEee3Xu0cSAu_nA" association="_MYT8AO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NKnisO8VEee3Xu0cSAu_nA" memberEnd="_NKow0e8VEee3Xu0cSAu_nA _NKow0u8VEee3Xu0cSAu_nA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NKoJwO8VEee3Xu0cSAu_nA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NKow0O8VEee3Xu0cSAu_nA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NKow0e8VEee3Xu0cSAu_nA" name="main system" type="_fJIzMO8UEee3Xu0cSAu_nA" association="_NKnisO8VEee3Xu0cSAu_nA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NKow0u8VEee3Xu0cSAu_nA" name="magento" type="_xte4IO8UEee3Xu0cSAu_nA" association="_NKnisO8VEee3Xu0cSAu_nA"/>
+  </packagedElement>
+</uml:Model>
