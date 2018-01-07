@@ -86,12 +86,26 @@ Will also include several modules such as statistics and Customer Relationship M
     <ownedEnd xmi:type="uml:Property" xmi:id="_NKow0u8VEee3Xu0cSAu_nA" name="magento" type="_xte4IO8UEee3Xu0cSAu_nA" association="_NKnisO8VEee3Xu0cSAu_nA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_luK7kO8WEee3Xu0cSAu_nA" name="Accounting">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_W6qXsPO7EeeeCMacsBq8ZQ" annotatedElement="_p9pV4PO6EeeeCMacsBq8ZQ">
+      <body>Initialization of Exercice&#xD;
+&#xD;
+Pre condition : registration is done&#xD;
+</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_YWp18O8YEee3Xu0cSAu_nA" name="Journal"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_cvO_wO8YEee3Xu0cSAu_nA" name="Asset"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_nckFIO8YEee3Xu0cSAu_nA" name="Analytic"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_CZuPIO8ZEee3Xu0cSAu_nA" name="Journal"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_EpGQwO8ZEee3Xu0cSAu_nA" name="Asset"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_G8JRcO8ZEee3Xu0cSAu_nA" name="Analytic"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_p9pV4PO6EeeeCMacsBq8ZQ" name="Initialize Exercice"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UxUsoPO7EeeeCMacsBq8ZQ" name="auto generation" memberEnd="_UxV6wvO7EeeeCMacsBq8ZQ _UxV6w_O7EeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UxV6wPO7EeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UxV6wfO7EeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UxV6wvO7EeeeCMacsBq8ZQ" name="initialize exercice" type="_p9pV4PO6EeeeCMacsBq8ZQ" association="_UxUsoPO7EeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UxV6w_O7EeeeCMacsBq8ZQ" name="&lt;&lt;program>>" type="_8In4YPOVEeeeCMacsBq8ZQ" association="_UxUsoPO7EeeeCMacsBq8ZQ"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_sBEdAO8WEee3Xu0cSAu_nA" name="Management System"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_yR1QcO8WEee3Xu0cSAu_nA" name="Frontend"/>
