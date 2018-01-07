@@ -212,5 +212,12 @@ We need to define a use case scenario before drawing our activity diagram.</body
       <node xmi:type="uml:OpaqueAction" xmi:id="_3UNC8POcEeeeCMacsBq8ZQ" name="Auto Calling Staff" incoming="_9tgHUPOcEeeeCMacsBq8ZQ" outgoing="_-gFa0POcEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_7ec10POcEeeeCMacsBq8ZQ" name="End of activity Diagram" incoming="_-gFa0POcEeeeCMacsBq8ZQ __WjIwPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_UCiekPO8EeeeCMacsBq8ZQ" name="Identification sequence diagram">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fiznUPO9EeeeCMacsBq8ZQ">
+        <body>The sequence diagram here will overview the different sequences involved in the login/registration process.</body>
+      </ownedComment>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_b8vfkPO9EeeeCMacsBq8ZQ" name="User"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_dZ8dYPO9EeeeCMacsBq8ZQ" name="System"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

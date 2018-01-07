@@ -1391,4 +1391,35 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Y5iMEfOjEeeeCMacsBq8ZQ" id="(0.04950495049504951,1.0)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_U-ty8PO8EeeeCMacsBq8ZQ" type="PapyrusUMLSequenceDiagram" name="IdentificationSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_U-ty8fO8EeeeCMacsBq8ZQ" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_U-ty8vO8EeeeCMacsBq8ZQ" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_U-ty8_O8EeeeCMacsBq8ZQ" type="Interaction_SubfragmentCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_b80YEPO9EeeeCMacsBq8ZQ" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_b80_IPO9EeeeCMacsBq8ZQ" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="uml-spe.uml#_b8vfkPO9EeeeCMacsBq8ZQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b80YEfO9EeeeCMacsBq8ZQ" x="114" y="10" height="700"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_daBV4PO9EeeeCMacsBq8ZQ" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_daB88PO9EeeeCMacsBq8ZQ" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="uml-spe.uml#_dZ8dYPO9EeeeCMacsBq8ZQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_daBV4fO9EeeeCMacsBq8ZQ" x="274" y="10" height="700"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_fi4f0PO9EeeeCMacsBq8ZQ" type="Comment_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_fi5G4PO9EeeeCMacsBq8ZQ" type="Comment_BodyLabel"/>
+          <element xmi:type="uml:Comment" href="uml-spe.uml#_fiznUPO9EeeeCMacsBq8ZQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fi4f0fO9EeeeCMacsBq8ZQ" x="594" y="56" width="221" height="101"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U-ty9PO8EeeeCMacsBq8ZQ"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="uml-spe.uml#_UCiekPO8EeeeCMacsBq8ZQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U-ty9fO8EeeeCMacsBq8ZQ"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_U-ty9vO8EeeeCMacsBq8ZQ" name="diagram_compatibility_version" stringValue="1.3.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_U-ty9_O8EeeeCMacsBq8ZQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_U-ty-PO8EeeeCMacsBq8ZQ" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="uml-spe.uml#_ZbdFYO8ZEee3Xu0cSAu_nA"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="uml-spe.uml#_UCiekPO8EeeeCMacsBq8ZQ"/>
+  </notation:Diagram>
 </xmi:XMI>
