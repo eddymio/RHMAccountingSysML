@@ -160,7 +160,7 @@ Will also include several modules such as statistics and Customer Relationship M
       <ownedEnd xmi:type="uml:Property" xmi:id="_Tlw4QfOWEeeeCMacsBq8ZQ" name="registration" type="_jpp-wO8ZEee3Xu0cSAu_nA" association="_Tlt08POWEeeeCMacsBq8ZQ"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_TlxfUPOWEeeeCMacsBq8ZQ" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_Tlt08POWEeeeCMacsBq8ZQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_5MzLAPOWEeeeCMacsBq8ZQ" name="Identification process" node="_ZYU3UPOXEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _LyQGYPObEeeeCMacsBq8ZQ _VEQdQPObEeeeCMacsBq8ZQ _ryyqsPObEeeeCMacsBq8ZQ _1bC-YPObEeeeCMacsBq8ZQ _9T04gPObEeeeCMacsBq8ZQ _PfG9MPOcEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _udoD0POcEeeeCMacsBq8ZQ _3UNC8POcEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ" group="_9JgM8POdEeeeCMacsBq8ZQ _7x0oUPOdEeeeCMacsBq8ZQ">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_5MzLAPOWEeeeCMacsBq8ZQ" name="Identification process" node="_ZYU3UPOXEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _ryyqsPObEeeeCMacsBq8ZQ _1bC-YPObEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _udoD0POcEeeeCMacsBq8ZQ _3UNC8POcEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ" group="_9JgM8POdEeeeCMacsBq8ZQ _7x0oUPOdEeeeCMacsBq8ZQ">
       <ownedComment xmi:type="uml:Comment" xmi:id="_FgaRsPOXEeeeCMacsBq8ZQ">
         <body>This activity diagram is part of the behavior model.&#xD;
 It's used to visualize the steps in the Identification Use Case scenario.&#xD;
@@ -171,39 +171,31 @@ We need to define a use case scenario before drawing our activity diagram.</body
       <edge xmi:type="uml:ControlFlow" xmi:id="_vaSdMPOYEeeeCMacsBq8ZQ" target="_rQmrAPOYEeeeCMacsBq8ZQ" source="_ZYU3UPOXEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_zXTFUPOYEeeeCMacsBq8ZQ" target="_nqhKkPOXEeeeCMacsBq8ZQ" source="_rQmrAPOYEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_IYjmsPObEeeeCMacsBq8ZQ" target="_C6hQsPObEeeeCMacsBq8ZQ" source="_3pnrkPOXEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_QhdngPObEeeeCMacsBq8ZQ" name="[on failure]" target="_LyQGYPObEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_Y-VGIPObEeeeCMacsBq8ZQ" target="_VEQdQPObEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_cOCjYPObEeeeCMacsBq8ZQ" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_LyQGYPObEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_vFo7gPObEeeeCMacsBq8ZQ" name="System executes" target="_ryyqsPObEeeeCMacsBq8ZQ" source="_VEQdQPObEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_5pswIPObEeeeCMacsBq8ZQ" target="_1bC-YPObEeeeCMacsBq8ZQ" source="_ryyqsPObEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_VJg7QPOcEeeeCMacsBq8ZQ" name="[[redirection]" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_PfG9MPOcEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_YfG-EPOcEeeeCMacsBq8ZQ" target="_PfG9MPOcEeeeCMacsBq8ZQ" source="_1bC-YPObEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_ZNypAPOcEeeeCMacsBq8ZQ" target="_9T04gPObEeeeCMacsBq8ZQ" source="_1bC-YPObEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_qn6WgPOcEeeeCMacsBq8ZQ" target="_cocK8POcEeeeCMacsBq8ZQ" source="_DkdF4POYEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_rTmX0POcEeeeCMacsBq8ZQ" target="_fsSWcPOcEeeeCMacsBq8ZQ" source="_cocK8POcEeeeCMacsBq8ZQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_0OB8MPOcEeeeCMacsBq8ZQ" target="_udoD0POcEeeeCMacsBq8ZQ" source="_9T04gPObEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_rTmX0POcEeeeCMacsBq8ZQ" name="[On login success]" target="_fsSWcPOcEeeeCMacsBq8ZQ" source="_cocK8POcEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_9tgHUPOcEeeeCMacsBq8ZQ" target="_3UNC8POcEeeeCMacsBq8ZQ" source="_udoD0POcEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_-gFa0POcEeeeCMacsBq8ZQ" target="_7ec10POcEeeeCMacsBq8ZQ" source="_3UNC8POcEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="__WjIwPOcEeeeCMacsBq8ZQ" target="_7ec10POcEeeeCMacsBq8ZQ" source="_fsSWcPOcEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_73DRIPOeEeeeCMacsBq8ZQ" name="[Failure login]" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_cocK8POcEeeeCMacsBq8ZQ"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_9JgM8POdEeeeCMacsBq8ZQ" name="User" node="_ZYU3UPOXEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _LyQGYPObEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _VEQdQPObEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _ryyqsPObEeeeCMacsBq8ZQ _1bC-YPObEeeeCMacsBq8ZQ _9T04gPObEeeeCMacsBq8ZQ _PfG9MPOcEeeeCMacsBq8ZQ _udoD0POcEeeeCMacsBq8ZQ _3UNC8POcEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_21EoMPOiEeeeCMacsBq8ZQ" name="[On auto Generation Failure]" target="_udoD0POcEeeeCMacsBq8ZQ" source="_1bC-YPObEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_B3_jEPOjEeeeCMacsBq8ZQ" name="[On success]" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_1bC-YPObEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_J_iR8POjEeeeCMacsBq8ZQ" name="[On Success]" target="_ryyqsPObEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Y1muUPOjEeeeCMacsBq8ZQ" name="[Failure / CAncel]" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_9JgM8POdEeeeCMacsBq8ZQ" name="User" node="_ZYU3UPOXEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _1bC-YPObEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_7x0oUPOdEeeeCMacsBq8ZQ" name="System"/>
       <node xmi:type="uml:InitialNode" xmi:id="_ZYU3UPOXEeeeCMacsBq8ZQ" name="Access Extranet" outgoing="_vaSdMPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_nqhKkPOXEeeeCMacsBq8ZQ" name="Decision" incoming="_zXTFUPOYEeeeCMacsBq8ZQ" outgoing="_Lz1iIPOYEeeeCMacsBq8ZQ _QfKBwPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_3pnrkPOXEeeeCMacsBq8ZQ" name="Registration form" incoming="_Lz1iIPOYEeeeCMacsBq8ZQ _cOCjYPObEeeeCMacsBq8ZQ" outgoing="_IYjmsPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_DkdF4POYEeeeCMacsBq8ZQ" name="Login form" incoming="_QfKBwPOYEeeeCMacsBq8ZQ _VJg7QPOcEeeeCMacsBq8ZQ _73DRIPOeEeeeCMacsBq8ZQ" outgoing="_qn6WgPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3pnrkPOXEeeeCMacsBq8ZQ" name="Registration form" incoming="_Lz1iIPOYEeeeCMacsBq8ZQ _Y1muUPOjEeeeCMacsBq8ZQ" outgoing="_IYjmsPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_DkdF4POYEeeeCMacsBq8ZQ" name="Login form" incoming="_QfKBwPOYEeeeCMacsBq8ZQ _73DRIPOeEeeeCMacsBq8ZQ _B3_jEPOjEeeeCMacsBq8ZQ" outgoing="_qn6WgPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_rQmrAPOYEeeeCMacsBq8ZQ" name="System displays login form / registration button" incoming="_vaSdMPOYEeeeCMacsBq8ZQ" outgoing="_zXTFUPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:MergeNode" xmi:id="_C6hQsPObEeeeCMacsBq8ZQ" name="Submission" incoming="_IYjmsPObEeeeCMacsBq8ZQ" outgoing="_QhdngPObEeeeCMacsBq8ZQ _Y-VGIPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_LyQGYPObEeeeCMacsBq8ZQ" name="Failure / Cancel" incoming="_QhdngPObEeeeCMacsBq8ZQ" outgoing="_cOCjYPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_VEQdQPObEeeeCMacsBq8ZQ" name="Success" incoming="_Y-VGIPObEeeeCMacsBq8ZQ" outgoing="_vFo7gPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_ryyqsPObEeeeCMacsBq8ZQ" name="Auto Generation of Exercice" incoming="_vFo7gPObEeeeCMacsBq8ZQ" outgoing="_5pswIPObEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:MergeNode" xmi:id="_1bC-YPObEeeeCMacsBq8ZQ" name="System" incoming="_5pswIPObEeeeCMacsBq8ZQ" outgoing="_YfG-EPOcEeeeCMacsBq8ZQ _ZNypAPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_9T04gPObEeeeCMacsBq8ZQ" name="Generation Failure" incoming="_ZNypAPOcEeeeCMacsBq8ZQ" outgoing="_0OB8MPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_PfG9MPOcEeeeCMacsBq8ZQ" name="Exercice Created" incoming="_YfG-EPOcEeeeCMacsBq8ZQ" outgoing="_VJg7QPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_C6hQsPObEeeeCMacsBq8ZQ" name="Submission" incoming="_IYjmsPObEeeeCMacsBq8ZQ" outgoing="_J_iR8POjEeeeCMacsBq8ZQ _Y1muUPOjEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ryyqsPObEeeeCMacsBq8ZQ" name="Auto Generation of Exercice" incoming="_J_iR8POjEeeeCMacsBq8ZQ" outgoing="_5pswIPObEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_1bC-YPObEeeeCMacsBq8ZQ" name="System" incoming="_5pswIPObEeeeCMacsBq8ZQ" outgoing="_21EoMPOiEeeeCMacsBq8ZQ _B3_jEPOjEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:MergeNode" xmi:id="_cocK8POcEeeeCMacsBq8ZQ" name="[Submission]" incoming="_qn6WgPOcEeeeCMacsBq8ZQ" outgoing="_rTmX0POcEeeeCMacsBq8ZQ _73DRIPOeEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_fsSWcPOcEeeeCMacsBq8ZQ" name="Success login" incoming="_rTmX0POcEeeeCMacsBq8ZQ" outgoing="__WjIwPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_udoD0POcEeeeCMacsBq8ZQ" name="Automatic Problem report" incoming="_0OB8MPOcEeeeCMacsBq8ZQ" outgoing="_9tgHUPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_3UNC8POcEeeeCMacsBq8ZQ" name="Auto Calling Staff" incoming="_9tgHUPOcEeeeCMacsBq8ZQ" outgoing="_-gFa0POcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_fsSWcPOcEeeeCMacsBq8ZQ" name="Dashboard" incoming="_rTmX0POcEeeeCMacsBq8ZQ" outgoing="__WjIwPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_udoD0POcEeeeCMacsBq8ZQ" name="Automatic Problem report" incoming="_21EoMPOiEeeeCMacsBq8ZQ" outgoing="_9tgHUPOcEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3UNC8POcEeeeCMacsBq8ZQ" name="Auto Calling Staff" incoming="_9tgHUPOcEeeeCMacsBq8ZQ" outgoing="_-gFa0POcEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_7ec10POcEeeeCMacsBq8ZQ" name="End of activity Diagram" incoming="_-gFa0POcEeeeCMacsBq8ZQ __WjIwPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
     </packagedElement>
   </packagedElement>
