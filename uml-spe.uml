@@ -15,9 +15,15 @@ Will also include several modules such as statistics and Customer Relationship M
 </body>
   </ownedComment>
   <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_mW2-IO8UEee3Xu0cSAu_nA" name="Accountant"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_n-ki0O8UEee3Xu0cSAu_nA" name="Sales"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator">
+    <generalization xmi:type="uml:Generalization" xmi:id="_6MszsPOUEeeeCMacsBq8ZQ" general="_v-pEQPOUEeeeCMacsBq8ZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_mW2-IO8UEee3Xu0cSAu_nA" name="Accountant">
+    <generalization xmi:type="uml:Generalization" xmi:id="_97WPsPOUEeeeCMacsBq8ZQ" general="_v-pEQPOUEeeeCMacsBq8ZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_n-ki0O8UEee3Xu0cSAu_nA" name="Sales">
+    <generalization xmi:type="uml:Generalization" xmi:id="_8-MD4POUEeeeCMacsBq8ZQ" general="_v-pEQPOUEeeeCMacsBq8ZQ"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_s5Oe8O8UEee3Xu0cSAu_nA" name="Supplier"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_uGrJgO8UEee3Xu0cSAu_nA" name="Bank"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_wnoDUO8UEee3Xu0cSAu_nA" name="Wordpress"/>
@@ -94,8 +100,81 @@ Will also include several modules such as statistics and Customer Relationship M
       <body>Identification of Company and its users&#xD;
 </body>
     </ownedComment>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_hv19cO8ZEee3Xu0cSAu_nA" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hv19cO8ZEee3Xu0cSAu_nA" name="Login">
+      <include xmi:type="uml:Include" xmi:id="_mQzbEPOWEeeeCMacsBq8ZQ" addition="_jpp-wO8ZEee3Xu0cSAu_nA"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_jpp-wO8ZEee3Xu0cSAu_nA" name="Registration"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_61DuYO8ZEee3Xu0cSAu_nA" name="Contact"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_61DuYO8ZEee3Xu0cSAu_nA" name="List of Contact">
+      <include xmi:type="uml:Include" xmi:id="_zL1HEPOWEeeeCMacsBq8ZQ" addition="_hv19cO8ZEee3Xu0cSAu_nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_v-pEQPOUEeeeCMacsBq8ZQ" name="User"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="__tydsPOUEeeeCMacsBq8ZQ" name="sign in" memberEnd="__t5LYPOUEeeeCMacsBq8ZQ __t6ZgPOUEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__t3WMPOUEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__t3WMfOUEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__t5LYPOUEeeeCMacsBq8ZQ" name="login" type="_hv19cO8ZEee3Xu0cSAu_nA" association="__tydsPOUEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__t6ZgPOUEeeeCMacsBq8ZQ" name="user" type="_v-pEQPOUEeeeCMacsBq8ZQ" association="__tydsPOUEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lWs_wPOVEeeeCMacsBq8ZQ" name="addContact">
+      <include xmi:type="uml:Include" xmi:id="_k9Ja0POWEeeeCMacsBq8ZQ" addition="_hv19cO8ZEee3Xu0cSAu_nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_xx5VIPOVEeeeCMacsBq8ZQ" name="update Contact">
+      <include xmi:type="uml:Include" xmi:id="_xvV68POWEeeeCMacsBq8ZQ" addition="_hv19cO8ZEee3Xu0cSAu_nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_8In4YPOVEeeeCMacsBq8ZQ" name="&lt;&lt;Program>>"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-80eUPOVEeeeCMacsBq8ZQ" name="create Exercice">
+      <include xmi:type="uml:Include" xmi:id="_ukAnYPOWEeeeCMacsBq8ZQ" addition="_jpp-wO8ZEee3Xu0cSAu_nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Bf2bwPOWEeeeCMacsBq8ZQ" name="auto generation of Exercice upon registration" memberEnd="_Bf3p4vOWEeeeCMacsBq8ZQ _Bf4Q8POWEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bf3p4POWEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bf3p4fOWEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Bf3p4vOWEeeeCMacsBq8ZQ" name="create exercice" type="_-80eUPOVEeeeCMacsBq8ZQ" association="_Bf2bwPOWEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Bf4Q8POWEeeeCMacsBq8ZQ" name="&lt;&lt;program>>" type="_8In4YPOVEeeeCMacsBq8ZQ" association="_Bf2bwPOWEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MI-WkPOWEeeeCMacsBq8ZQ" name="access list of contacts" memberEnd="_MI_ksvOWEeeeCMacsBq8ZQ _MJALwPOWEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MI_ksPOWEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MI_ksfOWEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MI_ksvOWEeeeCMacsBq8ZQ" name="list of contact" type="_61DuYO8ZEee3Xu0cSAu_nA" association="_MI-WkPOWEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MJALwPOWEeeeCMacsBq8ZQ" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_MI-WkPOWEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PUAIIPOWEeeeCMacsBq8ZQ" memberEnd="_PUKgMfOWEeeeCMacsBq8ZQ _PULHQPOWEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PUAvMPOWEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PUKgMPOWEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PUKgMfOWEeeeCMacsBq8ZQ" name="update contact" type="_xx5VIPOVEeeeCMacsBq8ZQ" association="_PUAIIPOWEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PULHQPOWEeeeCMacsBq8ZQ" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_PUAIIPOWEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QxPiMPOWEeeeCMacsBq8ZQ" memberEnd="_QxRXYfOWEeeeCMacsBq8ZQ _QxR-cPOWEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QxQwUPOWEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QxRXYPOWEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QxRXYfOWEeeeCMacsBq8ZQ" name="addcontact" type="_lWs_wPOVEeeeCMacsBq8ZQ" association="_QxPiMPOWEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QxR-cPOWEeeeCMacsBq8ZQ" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_QxPiMPOWEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Tlt08POWEeeeCMacsBq8ZQ" memberEnd="_Tlw4QfOWEeeeCMacsBq8ZQ _TlxfUPOWEeeeCMacsBq8ZQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TlvDEPOWEeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Tlw4QPOWEeeeCMacsBq8ZQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Tlw4QfOWEeeeCMacsBq8ZQ" name="registration" type="_jpp-wO8ZEee3Xu0cSAu_nA" association="_Tlt08POWEeeeCMacsBq8ZQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TlxfUPOWEeeeCMacsBq8ZQ" name="administrator" type="_iz3_kO8UEee3Xu0cSAu_nA" association="_Tlt08POWEeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_5MzLAPOWEeeeCMacsBq8ZQ" name="Identification process" node="_ZYU3UPOXEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FgaRsPOXEeeeCMacsBq8ZQ">
+        <body>This activity diagram is part of the behavior model.&#xD;
+It's used to visualize the steps in the Identification Use Case scenario.&#xD;
+We need to define a use case scenario before drawing our activity diagram.</body>
+      </ownedComment>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Lz1iIPOYEeeeCMacsBq8ZQ" name="User register its company" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_nqhKkPOXEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QfKBwPOYEeeeCMacsBq8ZQ" name="Sign in" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_nqhKkPOXEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_vaSdMPOYEeeeCMacsBq8ZQ" target="_rQmrAPOYEeeeCMacsBq8ZQ" source="_ZYU3UPOXEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zXTFUPOYEeeeCMacsBq8ZQ" target="_nqhKkPOXEeeeCMacsBq8ZQ" source="_rQmrAPOYEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_ZYU3UPOXEeeeCMacsBq8ZQ" name="Access Extranet" outgoing="_vaSdMPOYEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_nqhKkPOXEeeeCMacsBq8ZQ" name="Decision" incoming="_zXTFUPOYEeeeCMacsBq8ZQ" outgoing="_Lz1iIPOYEeeeCMacsBq8ZQ _QfKBwPOYEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3pnrkPOXEeeeCMacsBq8ZQ" name="Registration" incoming="_Lz1iIPOYEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_DkdF4POYEeeeCMacsBq8ZQ" name="Login" incoming="_QfKBwPOYEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_rQmrAPOYEeeeCMacsBq8ZQ" name="System displays login form / registration button" incoming="_vaSdMPOYEeeeCMacsBq8ZQ" outgoing="_zXTFUPOYEeeeCMacsBq8ZQ"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
