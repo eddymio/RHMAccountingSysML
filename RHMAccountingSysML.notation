@@ -109,12 +109,77 @@
       <element xmi:type="uml:Comment" href="RHMAccountingSysML.uml#_kL3jUOT6EeeQtPHkNDHvDw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kMKeQeT6EeeQtPHkNDHvDw" x="260"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_z3uJgPVTEeeTqOPPkOB9GQ" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_z3uwkPVTEeeTqOPPkOB9GQ" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_z3uwkfVTEeeTqOPPkOB9GQ" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_H5WEwPVUEeeTqOPPkOB9GQ" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_H5Wr0PVUEeeTqOPPkOB9GQ" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_H5Wr0fVUEeeTqOPPkOB9GQ" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_H5Wr0vVUEeeTqOPPkOB9GQ" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_H5XS4PVUEeeTqOPPkOB9GQ" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_H5XS4fVUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_H5XS4vVUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_H5XS4_VUEeeTqOPPkOB9GQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5XS5PVUEeeTqOPPkOB9GQ"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_H5XS5fVUEeeTqOPPkOB9GQ" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_H5XS5vVUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_H5XS5_VUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_H5XS6PVUEeeTqOPPkOB9GQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5XS6fVUEeeTqOPPkOB9GQ"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_H5XS6vVUEeeTqOPPkOB9GQ" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_H5XS6_VUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_H5XS7PVUEeeTqOPPkOB9GQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_H5XS7fVUEeeTqOPPkOB9GQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5XS7vVUEeeTqOPPkOB9GQ"/>
+          </children>
+          <element xmi:type="uml:Class" href="RHMAccountingSysML.uml#_H4vAwPVUEeeTqOPPkOB9GQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H5WEwfVUEeeTqOPPkOB9GQ" x="34" y="32" width="200" height="144"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_H57TkPVUEeeTqOPPkOB9GQ" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_H57TkfVUEeeTqOPPkOB9GQ"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_H57Tk_VUEeeTqOPPkOB9GQ" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="RHMAccountingSysML.uml#_H4vAwPVUEeeTqOPPkOB9GQ"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H57TkvVUEeeTqOPPkOB9GQ" x="200"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_z3uwkvVTEeeTqOPPkOB9GQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z3uwk_VTEeeTqOPPkOB9GQ"/>
+      </children>
+      <element xmi:type="uml:Package" href="RHMAccountingSysML.uml#_z3rtQPVTEeeTqOPPkOB9GQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z3uJgfVTEeeTqOPPkOB9GQ" x="60" y="120" width="741" height="541"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_RykMoPVUEeeTqOPPkOB9GQ" type="NamedElement_DefaultShape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_RykMovVUEeeTqOPPkOB9GQ" type="NamedElement_NameLabel"/>
+      <element xmi:type="uml:Actor" href="RHMAccountingSysML.uml#_29pK0OT7EeeQtPHkNDHvDw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RykMofVUEeeTqOPPkOB9GQ" x="845" y="217"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_jbLGMeT6EeeQtPHkNDHvDw" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_jbLGMuT6EeeQtPHkNDHvDw"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_jbLGM-T6EeeQtPHkNDHvDw" diagramKindId="org.eclipse.papyrus.sysml14.diagram.blockdefinition">
       <owner xmi:type="uml:Model" href="RHMAccountingSysML.uml#_9u2H8OTyEeeQtPHkNDHvDw"/>
     </styles>
     <element xmi:type="uml:Model" href="RHMAccountingSysML.uml#_9u2H8OTyEeeQtPHkNDHvDw"/>
+    <edges xmi:type="notation:Connector" xmi:id="_CrBlwPVUEeeTqOPPkOB9GQ" type="Comment_AnnotatedElementEdge" source="_kMKeQOT6EeeQtPHkNDHvDw" target="_z3uJgPVTEeeTqOPPkOB9GQ">
+      <styles xmi:type="notation:FontStyle" xmi:id="_CrBlwfVUEeeTqOPPkOB9GQ"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CrBlwvVUEeeTqOPPkOB9GQ" points="[440, 82, -643984, -643984]$[440, 142, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CrKvsPVUEeeTqOPPkOB9GQ" id="(0.6617647058823529,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CrKvsfVUEeeTqOPPkOB9GQ" id="(0.5128205128205128,0.04066543438077634)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_H576oPVUEeeTqOPPkOB9GQ" type="StereotypeCommentLink" source="_H5WEwPVUEeeTqOPPkOB9GQ" target="_H57TkPVUEeeTqOPPkOB9GQ">
+      <styles xmi:type="notation:FontStyle" xmi:id="_H576ofVUEeeTqOPPkOB9GQ"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_H576pfVUEeeTqOPPkOB9GQ" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="RHMAccountingSysML.uml#_H4vAwPVUEeeTqOPPkOB9GQ"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H576ovVUEeeTqOPPkOB9GQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H576o_VUEeeTqOPPkOB9GQ"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H576pPVUEeeTqOPPkOB9GQ"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_qz_RYOT7EeeQtPHkNDHvDw" type="CompositeStructure" name="SurroundedSystem" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_q0JCYOT7EeeQtPHkNDHvDw" type="Class_Shape">

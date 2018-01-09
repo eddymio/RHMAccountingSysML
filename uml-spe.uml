@@ -9,7 +9,7 @@ Interaction with the whole server instance</body>
 They are more like a part involving an API on the server.&#xD;
 For instance, the system will provide API to let Worpdress use some functionalities.</body>
   </ownedComment>
-  <ownedComment xmi:type="uml:Comment" xmi:id="_NBd70O8XEee3Xu0cSAu_nA">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_NBd70O8XEee3Xu0cSAu_nA" annotatedElement="_luK7kO8WEee3Xu0cSAu_nA">
     <body>ERP (Enterprise Resource Planning) implementing an accounting system along with a marketing and sales management system.&#xD;
 Will also include several modules such as statistics and Customer Relationship Management (CRM) tools.&#xD;
 </body>
@@ -106,9 +106,15 @@ Pre condition : registration is done&#xD;
       <ownedEnd xmi:type="uml:Property" xmi:id="_UxV6wvO7EeeeCMacsBq8ZQ" name="initialize exercice" type="_p9pV4PO6EeeeCMacsBq8ZQ" association="_UxUsoPO7EeeeCMacsBq8ZQ"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_UxV6w_O7EeeeCMacsBq8ZQ" name="&lt;&lt;program>>" type="_8In4YPOVEeeeCMacsBq8ZQ" association="_UxUsoPO7EeeeCMacsBq8ZQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_5BPZUPVZEeeTqOPPkOB9GQ" name="&lt;&lt;access>>" client="_luK7kO8WEee3Xu0cSAu_nA" supplier="_sBEdAO8WEee3Xu0cSAu_nA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_7l3SMPVZEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_luK7kO8WEee3Xu0cSAu_nA" supplier="_ZbdFYO8ZEee3Xu0cSAu_nA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_sBEdAO8WEee3Xu0cSAu_nA" name="Management System"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_yR1QcO8WEee3Xu0cSAu_nA" name="Frontend"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sBEdAO8WEee3Xu0cSAu_nA" name="Management System">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_RsP3UPVWEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_sBEdAO8WEee3Xu0cSAu_nA" supplier="_ZbdFYO8ZEee3Xu0cSAu_nA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_yR1QcO8WEee3Xu0cSAu_nA" name="Shopping cart">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_CA2VcPVWEeeTqOPPkOB9GQ" name="&lt;&lt;merge>>" client="_yR1QcO8WEee3Xu0cSAu_nA" supplier="_jAbKUPVVEeeTqOPPkOB9GQ"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_ZbdFYO8ZEee3Xu0cSAu_nA" name="Identification">
     <ownedComment xmi:type="uml:Comment" xmi:id="_wd9XsO8ZEee3Xu0cSAu_nA" annotatedElement="_ZbdFYO8ZEee3Xu0cSAu_nA">
       <body>Identification of Company and its users&#xD;
@@ -180,7 +186,7 @@ Pre condition : registration is done&#xD;
 It's used to visualize the steps in the Identification Use Case scenario.&#xD;
 We need to define a use case scenario before drawing our activity diagram.</body>
       </ownedComment>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_Lz1iIPOYEeeeCMacsBq8ZQ" name="User register its company" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_nqhKkPOXEeeeCMacsBq8ZQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Lz1iIPOYEeeeCMacsBq8ZQ" name="[User register its company]" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_nqhKkPOXEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_QfKBwPOYEeeeCMacsBq8ZQ" name="Sign in" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_nqhKkPOXEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_vaSdMPOYEeeeCMacsBq8ZQ" target="_rQmrAPOYEeeeCMacsBq8ZQ" source="_ZYU3UPOXEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_zXTFUPOYEeeeCMacsBq8ZQ" target="_nqhKkPOXEeeeCMacsBq8ZQ" source="_rQmrAPOYEeeeCMacsBq8ZQ"/>
@@ -196,7 +202,7 @@ We need to define a use case scenario before drawing our activity diagram.</body
       <edge xmi:type="uml:ControlFlow" xmi:id="_B3_jEPOjEeeeCMacsBq8ZQ" name="[On success]" target="_DkdF4POYEeeeCMacsBq8ZQ" source="_1bC-YPObEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_J_iR8POjEeeeCMacsBq8ZQ" name="[On Success]" target="_ryyqsPObEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Y1muUPOjEeeeCMacsBq8ZQ" name="[Failure / CAncel]" target="_3pnrkPOXEeeeCMacsBq8ZQ" source="_C6hQsPObEeeeCMacsBq8ZQ"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_9JgM8POdEeeeCMacsBq8ZQ" name="User" node="_ZYU3UPOXEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _1bC-YPObEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_9JgM8POdEeeeCMacsBq8ZQ" name="User" node="_ZYU3UPOXEeeeCMacsBq8ZQ _rQmrAPOYEeeeCMacsBq8ZQ _nqhKkPOXEeeeCMacsBq8ZQ _3pnrkPOXEeeeCMacsBq8ZQ _C6hQsPObEeeeCMacsBq8ZQ _DkdF4POYEeeeCMacsBq8ZQ _cocK8POcEeeeCMacsBq8ZQ _fsSWcPOcEeeeCMacsBq8ZQ _7ec10POcEeeeCMacsBq8ZQ"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_7x0oUPOdEeeeCMacsBq8ZQ" name="System"/>
       <node xmi:type="uml:InitialNode" xmi:id="_ZYU3UPOXEeeeCMacsBq8ZQ" name="Access Extranet" outgoing="_vaSdMPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_nqhKkPOXEeeeCMacsBq8ZQ" name="Decision" incoming="_zXTFUPOYEeeeCMacsBq8ZQ" outgoing="_Lz1iIPOYEeeeCMacsBq8ZQ _QfKBwPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
@@ -205,7 +211,7 @@ We need to define a use case scenario before drawing our activity diagram.</body
       <node xmi:type="uml:OpaqueAction" xmi:id="_rQmrAPOYEeeeCMacsBq8ZQ" name="System displays login form / registration button" incoming="_vaSdMPOYEeeeCMacsBq8ZQ" outgoing="_zXTFUPOYEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:MergeNode" xmi:id="_C6hQsPObEeeeCMacsBq8ZQ" name="Submission" incoming="_IYjmsPObEeeeCMacsBq8ZQ" outgoing="_J_iR8POjEeeeCMacsBq8ZQ _Y1muUPOjEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_ryyqsPObEeeeCMacsBq8ZQ" name="Auto Generation of Exercice" incoming="_J_iR8POjEeeeCMacsBq8ZQ" outgoing="_5pswIPObEeeeCMacsBq8ZQ"/>
-      <node xmi:type="uml:MergeNode" xmi:id="_1bC-YPObEeeeCMacsBq8ZQ" name="System" incoming="_5pswIPObEeeeCMacsBq8ZQ" outgoing="_21EoMPOiEeeeCMacsBq8ZQ _B3_jEPOjEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_1bC-YPObEeeeCMacsBq8ZQ" name="System" incoming="_5pswIPObEeeeCMacsBq8ZQ" outgoing="_21EoMPOiEeeeCMacsBq8ZQ _B3_jEPOjEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:MergeNode" xmi:id="_cocK8POcEeeeCMacsBq8ZQ" name="[Submission]" incoming="_qn6WgPOcEeeeCMacsBq8ZQ" outgoing="_rTmX0POcEeeeCMacsBq8ZQ _73DRIPOeEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_fsSWcPOcEeeeCMacsBq8ZQ" name="Dashboard" incoming="_rTmX0POcEeeeCMacsBq8ZQ" outgoing="__WjIwPOcEeeeCMacsBq8ZQ" inPartition="_9JgM8POdEeeeCMacsBq8ZQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_udoD0POcEeeeCMacsBq8ZQ" name="Automatic Problem report" incoming="_21EoMPOiEeeeCMacsBq8ZQ" outgoing="_9tgHUPOcEeeeCMacsBq8ZQ"/>
@@ -219,5 +225,8 @@ We need to define a use case scenario before drawing our activity diagram.</body
       <lifeline xmi:type="uml:Lifeline" xmi:id="_b8vfkPO9EeeeCMacsBq8ZQ" name="User"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_dZ8dYPO9EeeeCMacsBq8ZQ" name="System"/>
     </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jAbKUPVVEeeTqOPPkOB9GQ" name="Point Of Sale">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_W6hTAPVWEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_jAbKUPVVEeeTqOPPkOB9GQ" supplier="_sBEdAO8WEee3Xu0cSAu_nA"/>
   </packagedElement>
 </uml:Model>

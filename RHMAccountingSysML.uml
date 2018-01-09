@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
   <uml:Model xmi:id="_9u2H8OTyEeeQtPHkNDHvDw" name="RHMAccountingSysML">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_kL3jUOT6EeeQtPHkNDHvDw">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_kL3jUOT6EeeQtPHkNDHvDw" annotatedElement="_z3rtQPVTEeeTqOPPkOB9GQ">
       <body>Block Definition Diagram&#xD;
 This composite structure gathers the &#xD;
 ERP/CRM system and all external actors &#xD;
@@ -96,6 +96,10 @@ interacting with the system&#xD;
       <ownedEnd xmi:type="uml:Property" xmi:id="_6gPjQ-XJEeel8bFcR7AX6w" name="list journal entries" type="_4ZOzcOXJEeel8bFcR7AX6w" association="_6gPjQOXJEeel8bFcR7AX6w"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_6gPjROXJEeel8bFcR7AX6w" name="user" type="_kXEssOXJEeel8bFcR7AX6w" association="_6gPjQOXJEeel8bFcR7AX6w"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vKEuoPVTEeeTqOPPkOB9GQ" name="Package1"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_z3rtQPVTEeeTqOPPkOB9GQ" name="bdd [package] Context [Context Overview]">
+      <packagedElement xmi:type="uml:Class" xmi:id="_H4vAwPVUEeeTqOPPkOB9GQ" name="Context"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-SGmAOTyEeeQtPHkNDHvDw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-SYS0OTyEeeQtPHkNDHvDw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -167,4 +171,5 @@ interacting with the system&#xD;
   <Requirements:Refine xmi:id="_oyEYsOXGEeel8bFcR7AX6w" base_DirectedRelationship="_oxnswOXGEeel8bFcR7AX6w" base_Abstraction="_oxnswOXGEeel8bFcR7AX6w"/>
   <Requirements:Satisfy xmi:id="_-X9jEOXGEeel8bFcR7AX6w" base_DirectedRelationship="_-XqoIOXGEeel8bFcR7AX6w" base_Abstraction="_-XqoIOXGEeel8bFcR7AX6w"/>
   <ModelElements:Stakeholder xmi:id="_2rkpsOXHEeel8bFcR7AX6w" base_Classifier="_2rRuwOXHEeel8bFcR7AX6w"/>
+  <Blocks:Block xmi:id="_H471EPVUEeeTqOPPkOB9GQ" base_Class="_H4vAwPVUEeeTqOPPkOB9GQ"/>
 </xmi:XMI>
