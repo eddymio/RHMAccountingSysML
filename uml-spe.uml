@@ -120,6 +120,12 @@ Pre condition : registration is done&#xD;
       <body>Identification of Company and its users&#xD;
 </body>
     </ownedComment>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_n5AusAEuEeiU6Je0jG-2fw">
+      <body>Can include a sequence diagram to describe the login process
+And for more detail about the login alternatives scenaris, we can implement
+a state-transition diagram also
+</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hv19cO8ZEee3Xu0cSAu_nA" name="Login">
       <include xmi:type="uml:Include" xmi:id="_mQzbEPOWEeeeCMacsBq8ZQ" addition="_jpp-wO8ZEee3Xu0cSAu_nA"/>
     </packagedElement>

@@ -728,6 +728,12 @@
       <element xmi:type="uml:Actor" href="uml-spe.uml#_8In4YPOVEeeeCMacsBq8ZQ"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8NoUMfOVEeeeCMacsBq8ZQ" x="880" y="320"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_n5zY4AEuEeiU6Je0jG-2fw" type="Comment_Shape" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_n544cAEuEeiU6Je0jG-2fw" type="Comment_BodyLabel"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_n5zY4QEuEeiU6Je0jG-2fw"/>
+      <element xmi:type="uml:Comment" href="uml-spe.uml#_n5AusAEuEeiU6Je0jG-2fw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n5zY4gEuEeiU6Je0jG-2fw" x="740" y="580"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_fQnh8e8ZEee3Xu0cSAu_nA" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_fQnh8u8ZEee3Xu0cSAu_nA"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_fQnh8-8ZEee3Xu0cSAu_nA" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
@@ -1451,7 +1457,7 @@
       <element xmi:type="uml:ControlFlow" href="uml-spe.uml#_B3_jEPOjEeeeCMacsBq8ZQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B6qckvOjEeeeCMacsBq8ZQ" points="[546, 500, -643984, -643984]$[710, 480, -643984, -643984]$[770, 188, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CAbtYPOjEeeeCMacsBq8ZQ" id="(0.0,0.4666666666666667)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CAbtYfOjEeeeCMacsBq8ZQ" id="(0.0,0.7)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CAbtYfOjEeeeCMacsBq8ZQ" id="(0.8518518518518519,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_KCA-MPOjEeeeCMacsBq8ZQ" type="ControlFlow_Edge" source="_C8xTcPObEeeeCMacsBq8ZQ" target="_r1KpQPObEeeeCMacsBq8ZQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_KCA-M_OjEeeeCMacsBq8ZQ" type="ControlFlow_NameLabel">
