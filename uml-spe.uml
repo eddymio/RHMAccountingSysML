@@ -17,6 +17,20 @@ Will also include several modules such as statistics and Customer Relationship M
   <ownedComment xmi:type="uml:Comment" xmi:id="_-khZsAQVEei5_IWXSDYM-w">
     <body>https://www.visual-paradigm.com/features/uml-tool/</body>
   </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_ePnNQAQoEei5_IWXSDYM-w">
+    <body>Before drawing a component diagram, the following artifacts are to be identified clearly −&#xD;
+Files used in the system.&#xD;
+Libraries and other artifacts relevant to the application.&#xD;
+Relationships among the artifacts.&#xD;
+&#xD;
+After identifying the artifacts, the following points need to be kept in mind.&#xD;
+&#xD;
+Use a meaningful name to identify the component for which the diagram is to be drawn.&#xD;
+&#xD;
+Prepare a mental layout before producing the using tools.&#xD;
+&#xD;
+Use notes for clarifying important points.</body>
+  </ownedComment>
   <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator">
     <generalization xmi:type="uml:Generalization" xmi:id="_6MszsPOUEeeeCMacsBq8ZQ" general="_v-pEQPOUEeeeCMacsBq8ZQ"/>
@@ -98,9 +112,16 @@ Pre condition : registration is done&#xD;
     <packagedElement xmi:type="uml:Package" xmi:id="_YWp18O8YEee3Xu0cSAu_nA" name="Journal"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_cvO_wO8YEee3Xu0cSAu_nA" name="Asset"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_nckFIO8YEee3Xu0cSAu_nA" name="Analytic"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_CZuPIO8ZEee3Xu0cSAu_nA" name="Journal"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_EpGQwO8ZEee3Xu0cSAu_nA" name="Asset"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_G8JRcO8ZEee3Xu0cSAu_nA" name="Analytic"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CZuPIO8ZEee3Xu0cSAu_nA" name="Journal">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_D7F48AQaEei5_IWXSDYM-w" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_95xPsAQZEei5_IWXSDYM-w" addition="_p9pV4PO6EeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_EpGQwO8ZEee3Xu0cSAu_nA" name="Asset">
+      <include xmi:type="uml:Include" xmi:id="_B0bHYAQaEei5_IWXSDYM-w" addition="_p9pV4PO6EeeeCMacsBq8ZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_G8JRcO8ZEee3Xu0cSAu_nA" name="Analytic">
+      <extend xmi:type="uml:Extend" xmi:id="_D7DcsAQaEei5_IWXSDYM-w" extendedCase="_CZuPIO8ZEee3Xu0cSAu_nA" extensionLocation="_D7F48AQaEei5_IWXSDYM-w"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_p9pV4PO6EeeeCMacsBq8ZQ" name="Initialize Exercice"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_UxUsoPO7EeeeCMacsBq8ZQ" name="auto generation" memberEnd="_UxV6wvO7EeeeCMacsBq8ZQ _UxV6w_O7EeeeCMacsBq8ZQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UxV6wPO7EeeeCMacsBq8ZQ" source="org.eclipse.papyrus">
@@ -111,6 +132,27 @@ Pre condition : registration is done&#xD;
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_5BPZUPVZEeeTqOPPkOB9GQ" name="&lt;&lt;access>>" client="_luK7kO8WEee3Xu0cSAu_nA" supplier="_sBEdAO8WEee3Xu0cSAu_nA"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_7l3SMPVZEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_luK7kO8WEee3Xu0cSAu_nA" supplier="_ZbdFYO8ZEee3Xu0cSAu_nA"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oJA5IAQZEei5_IWXSDYM-w" name="Access" memberEnd="_oJ2moAQZEei5_IWXSDYM-w _oJ3NsAQZEei5_IWXSDYM-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oJG_wAQZEei5_IWXSDYM-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oJHm0AQZEei5_IWXSDYM-w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oJ2moAQZEei5_IWXSDYM-w" name="journal" type="_CZuPIO8ZEee3Xu0cSAu_nA" association="_oJA5IAQZEei5_IWXSDYM-w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oJ3NsAQZEei5_IWXSDYM-w" name="&lt;&lt;program>>" type="_8In4YPOVEeeeCMacsBq8ZQ" association="_oJA5IAQZEei5_IWXSDYM-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2KZJMAQZEei5_IWXSDYM-w" name="list entries" memberEnd="_2KcMgAQZEei5_IWXSDYM-w _2KcMgQQZEei5_IWXSDYM-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2KZwQAQZEei5_IWXSDYM-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2KZwQQQZEei5_IWXSDYM-w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2KcMgAQZEei5_IWXSDYM-w" name="journal" type="_CZuPIO8ZEee3Xu0cSAu_nA" association="_2KZJMAQZEei5_IWXSDYM-w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2KcMgQQZEei5_IWXSDYM-w" name="user" type="_v-pEQPOUEeeeCMacsBq8ZQ" association="_2KZJMAQZEei5_IWXSDYM-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5JG9EAQZEei5_IWXSDYM-w" memberEnd="_5JKAYgQZEei5_IWXSDYM-w _5JKncAQZEei5_IWXSDYM-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5JKAYAQZEei5_IWXSDYM-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5JKAYQQZEei5_IWXSDYM-w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5JKAYgQZEei5_IWXSDYM-w" name="asset" type="_EpGQwO8ZEee3Xu0cSAu_nA" association="_5JG9EAQZEei5_IWXSDYM-w"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5JKncAQZEei5_IWXSDYM-w" name="user" type="_v-pEQPOUEeeeCMacsBq8ZQ" association="_5JG9EAQZEei5_IWXSDYM-w"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_sBEdAO8WEee3Xu0cSAu_nA" name="Management System">
     <packagedElement xmi:type="uml:Dependency" xmi:id="_RsP3UPVWEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_sBEdAO8WEee3Xu0cSAu_nA" supplier="_ZbdFYO8ZEee3Xu0cSAu_nA"/>
@@ -119,8 +161,30 @@ Pre condition : registration is done&#xD;
     <packagedElement xmi:type="uml:Dependency" xmi:id="_CA2VcPVWEeeTqOPPkOB9GQ" name="&lt;&lt;merge>>" client="_yR1QcO8WEee3Xu0cSAu_nA" supplier="_jAbKUPVVEeeTqOPPkOB9GQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_ZbdFYO8ZEee3Xu0cSAu_nA" name="Identification">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_wd9XsO8ZEee3Xu0cSAu_nA" annotatedElement="_ZbdFYO8ZEee3Xu0cSAu_nA">
-      <body>Identification of Company and its users&#xD;
+    <ownedComment xmi:type="uml:Comment" xmi:id="_wd9XsO8ZEee3Xu0cSAu_nA" annotatedElement="_jpp-wO8ZEee3Xu0cSAu_nA">
+      <body>1. Registration process&#xD;
+Use case : System Registration&#xD;
+Actors : Administrator, System&#xD;
+Short description : This package deals with the registration process for the ERP/CRM System.&#xD;
+Date : 2018-01-28&#xD;
+Author : Eddy Mio&#xD;
+Pre condition : none&#xD;
+Start : The user asking to signup&#xD;
+Dialog&#xD;
+  Nominal scenario :&#xD;
+1. A user (company representant) access the login/signup page&#xD;
+2. The user will fill in the form in order to create his account&#xD;
+3. The system controls entries and generate the newly created user&#xD;
+4. The user has to confirm his account by email&#xD;
+5. The system provides access to the user&#xD;
+&#xD;
+Alternative scenario :&#xD;
+&#xD;
+End and Post conditions :&#xD;
+- The system has controled entries and validate user creation&#xD;
+Post condition : The exercice generation is automatically made by the system.&#xD;
+&#xD;
+&#xD;
 </body>
     </ownedComment>
     <ownedComment xmi:type="uml:Comment" xmi:id="_n5AusAEuEeiU6Je0jG-2fw">
@@ -238,4 +302,30 @@ We need to define a use case scenario before drawing our activity diagram.</body
   <packagedElement xmi:type="uml:Package" xmi:id="_jAbKUPVVEeeTqOPPkOB9GQ" name="Point Of Sale">
     <packagedElement xmi:type="uml:Dependency" xmi:id="_W6hTAPVWEeeTqOPPkOB9GQ" name="&lt;&lt;use>>" client="_jAbKUPVVEeeTqOPPkOB9GQ" supplier="_sBEdAO8WEee3Xu0cSAu_nA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_6QprkAQnEei5_IWXSDYM-w" name="ERP">
+    <packagedElement xmi:type="uml:Component" xmi:id="_DSemgAQqEei5_IWXSDYM-w" name="Inventory"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="__-xE8AQnEei5_IWXSDYM-w" name="CRM">
+    <packagedElement xmi:type="uml:Component" xmi:id="_ek7EAAQqEei5_IWXSDYM-w" name="Contacts"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_l-Eb0AQqEei5_IWXSDYM-w" name="Access"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_GnMKcAQoEei5_IWXSDYM-w" name="IdentifyManagement"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_shb3oAQpEei5_IWXSDYM-w" name="WebStore">
+    <packagedElement xmi:type="uml:Component" xmi:id="_0lFP4AQnEei5_IWXSDYM-w" name="Shopping Cart"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_4tNi4AQnEei5_IWXSDYM-w" name="Online Payment"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_9M2FAAQpEei5_IWXSDYM-w" name="Authentication"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_GdctsAQqEei5_IWXSDYM-w" name="Accounting">
+    <packagedElement xmi:type="uml:Component" xmi:id="_18r0oAQqEei5_IWXSDYM-w" name="Journal"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_48-V0AQqEei5_IWXSDYM-w" name="Security"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_9qo-0AQqEei5_IWXSDYM-w" name="Encryption"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_IPLUkAQrEei5_IWXSDYM-w" name="Persistence Infrastructure">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_JnDRAAQsEei5_IWXSDYM-w" client="_IPLUkAQrEei5_IWXSDYM-w" supplier="_SMZysAQrEei5_IWXSDYM-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_PL5PEAQrEei5_IWXSDYM-w" name="ServerDatabase">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_VdqIEAQrEei5_IWXSDYM-w" name="access db" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OeLYAAQsEei5_IWXSDYM-w" client="_PL5PEAQrEei5_IWXSDYM-w" supplier="_SMZysAQrEei5_IWXSDYM-w" contract="_SMZysAQrEei5_IWXSDYM-w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_SMZysAQrEei5_IWXSDYM-w" name="JDBC"/>
 </uml:Model>
