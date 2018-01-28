@@ -22,14 +22,16 @@ Will also include several modules such as statistics and Customer Relationship M
 Files used in the system.&#xD;
 Libraries and other artifacts relevant to the application.&#xD;
 Relationships among the artifacts.&#xD;
-&#xD;
 After identifying the artifacts, the following points need to be kept in mind.&#xD;
-&#xD;
 Use a meaningful name to identify the component for which the diagram is to be drawn.&#xD;
-&#xD;
 Prepare a mental layout before producing the using tools.&#xD;
+Use notes for clarifying important points.&#xD;
 &#xD;
-Use notes for clarifying important points.</body>
+Component diagrams illustrate the pieces of software, embedded controllers, etc., that will make up a system. &#xD;
+A component diagram has a higher level of abstraction than a Class Diagram - &#xD;
+usually a component is implemented by one or more classes (or objects) at runtime. &#xD;
+They are building blocks so a component can eventually encompass a large portion of a system.&#xD;
+</body>
   </ownedComment>
   <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator">
@@ -304,16 +306,25 @@ We need to define a use case scenario before drawing our activity diagram.</body
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_6QprkAQnEei5_IWXSDYM-w" name="ERP">
     <packagedElement xmi:type="uml:Component" xmi:id="_DSemgAQqEei5_IWXSDYM-w" name="Inventory"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_aqzB4ARYEei5_IWXSDYM-w" name="Orders"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="__-xE8AQnEei5_IWXSDYM-w" name="CRM">
-    <packagedElement xmi:type="uml:Component" xmi:id="_ek7EAAQqEei5_IWXSDYM-w" name="Contacts"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_l-Eb0AQqEei5_IWXSDYM-w" name="Access"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_ECkbUARZEei5_IWXSDYM-w" name="Manage Contacts"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_tz8gMARcEei5_IWXSDYM-w" name="Define Rights"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ek7EAAQqEei5_IWXSDYM-w" name="Contacts">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ZszLwARcEei5_IWXSDYM-w" client="_ek7EAAQqEei5_IWXSDYM-w" supplier="_ECkbUARZEei5_IWXSDYM-w" contract="_ECkbUARZEei5_IWXSDYM-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_l-Eb0AQqEei5_IWXSDYM-w" name="Access">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Th9IMAReEei5_IWXSDYM-w" name="Port1" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xGz_IARcEei5_IWXSDYM-w" client="_l-Eb0AQqEei5_IWXSDYM-w" supplier="_tz8gMARcEei5_IWXSDYM-w" contract="_tz8gMARcEei5_IWXSDYM-w"/>
+    </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_GnMKcAQoEei5_IWXSDYM-w" name="IdentifyManagement"/>
   <packagedElement xmi:type="uml:Component" xmi:id="_shb3oAQpEei5_IWXSDYM-w" name="WebStore">
     <packagedElement xmi:type="uml:Component" xmi:id="_0lFP4AQnEei5_IWXSDYM-w" name="Shopping Cart"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_4tNi4AQnEei5_IWXSDYM-w" name="Online Payment"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_9M2FAAQpEei5_IWXSDYM-w" name="Authentication"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_9M2FAAQpEei5_IWXSDYM-w" name="Authentication">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_26oxMARXEei5_IWXSDYM-w" client="_9M2FAAQpEei5_IWXSDYM-w" supplier="_yQ3wwARXEei5_IWXSDYM-w" contract="_yQ3wwARXEei5_IWXSDYM-w"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_GdctsAQqEei5_IWXSDYM-w" name="Accounting">
     <packagedElement xmi:type="uml:Component" xmi:id="_18r0oAQqEei5_IWXSDYM-w" name="Journal"/>
@@ -328,4 +339,5 @@ We need to define a use case scenario before drawing our activity diagram.</body
     <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OeLYAAQsEei5_IWXSDYM-w" client="_PL5PEAQrEei5_IWXSDYM-w" supplier="_SMZysAQrEei5_IWXSDYM-w" contract="_SMZysAQrEei5_IWXSDYM-w"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_SMZysAQrEei5_IWXSDYM-w" name="JDBC"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_yQ3wwARXEei5_IWXSDYM-w" name="UserSession"/>
 </uml:Model>
