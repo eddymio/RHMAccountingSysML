@@ -310,13 +310,15 @@ We need to define a use case scenario before drawing our activity diagram.</body
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="__-xE8AQnEei5_IWXSDYM-w" name="CRM">
     <nestedClassifier xmi:type="uml:Interface" xmi:id="_ECkbUARZEei5_IWXSDYM-w" name="Manage Contacts"/>
-    <nestedClassifier xmi:type="uml:Interface" xmi:id="_tz8gMARcEei5_IWXSDYM-w" name="Define Rights"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_ek7EAAQqEei5_IWXSDYM-w" name="Contacts">
       <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ZszLwARcEei5_IWXSDYM-w" client="_ek7EAAQqEei5_IWXSDYM-w" supplier="_ECkbUARZEei5_IWXSDYM-w" contract="_ECkbUARZEei5_IWXSDYM-w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_l-Eb0AQqEei5_IWXSDYM-w" name="Access">
       <ownedAttribute xmi:type="uml:Port" xmi:id="_Th9IMAReEei5_IWXSDYM-w" name="Port1" aggregation="composite"/>
-      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xGz_IARcEei5_IWXSDYM-w" client="_l-Eb0AQqEei5_IWXSDYM-w" supplier="_tz8gMARcEei5_IWXSDYM-w" contract="_tz8gMARcEei5_IWXSDYM-w"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_j7uu0ARlEei5_IWXSDYM-w" name="gives rights" aggregation="composite"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xGz_IARcEei5_IWXSDYM-w" client="_l-Eb0AQqEei5_IWXSDYM-w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8rkFoARlEei5_IWXSDYM-w" client="_l-Eb0AQqEei5_IWXSDYM-w" supplier="_neec0ARlEei5_IWXSDYM-w" contract="_neec0ARlEei5_IWXSDYM-w"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_BAAWUARmEei5_IWXSDYM-w" client="_l-Eb0AQqEei5_IWXSDYM-w" supplier="_tvzQ8ARlEei5_IWXSDYM-w" contract="_tvzQ8ARlEei5_IWXSDYM-w"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_shb3oAQpEei5_IWXSDYM-w" name="WebStore">
@@ -340,4 +342,6 @@ We need to define a use case scenario before drawing our activity diagram.</body
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_SMZysAQrEei5_IWXSDYM-w" name="JDBC"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_yQ3wwARXEei5_IWXSDYM-w" name="UserSession"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_neec0ARlEei5_IWXSDYM-w" name="readOnly"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_tvzQ8ARlEei5_IWXSDYM-w" name="admin rights"/>
 </uml:Model>
