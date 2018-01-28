@@ -19,15 +19,14 @@ Analysis
 	
 2. Logical View
 
-This view represents a functional aspect, it identifies the elements and their relation for the system.
+	This view represents a functional aspect, it identifies the elements and their relation for the system.
 
-	1. A class diagram in the analysis phase represents entities (informations) used by actors. During the conceptual phase, the class diagram will detail objects manipulations.
-	
+	1. A class diagram in the analysis phase represents entities (informations) used by actors. During the conceptual phase, the class diagram will detail objects manipulations.	
 	2. An Object diagram details an example of an instance and is used when a class is more complex.
 
 3. Process View
 
-This view shows the processes and work flow rules of a system and how these processes communicate with each other. It explores *what needs to happen* in a system.
+	This view shows the processes and work flow rules of a system and how these processes communicate with each other. It explores *what needs to happen* in a system.
 
 	1. A Sequence diagram describes the scenarios of a use case.
 	2. An activity diagram describes the process work flow without using objects. It helps consolidate use case specifications.
@@ -41,14 +40,14 @@ Conception
 
 1. Component View
 
-This view features all the components being parts of the system (libraries, interfaces, database, executables...) and materials in use.
+	This view features all the components being parts of the system (libraries, interfaces, database, executables...) and materials in use.
 
 	1. The composite structure diagram describes a complex object while executing.
 	2. A components diagram describes all useful components of the system (applications, libraries, database instances, executables...)
 	
 2. Deployment View
 
-Its purpose is to show the material involved and the repartition of the different software elements.
+	Its purpose is to show the material involved and the repartition of the different software elements.
 
 	1. The Deployment diagram helps identifying the execution environment and the way components are involved.
 	

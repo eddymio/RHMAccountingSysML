@@ -14,6 +14,9 @@ For instance, the system will provide API to let Worpdress use some functionalit
 Will also include several modules such as statistics and Customer Relationship Management (CRM) tools.&#xD;
 </body>
   </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_-khZsAQVEei5_IWXSDYM-w">
+    <body>https://www.visual-paradigm.com/features/uml-tool/</body>
+  </ownedComment>
   <packagedElement xmi:type="uml:Component" xmi:id="_fJIzMO8UEee3Xu0cSAu_nA" name="Main System"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_iz3_kO8UEee3Xu0cSAu_nA" name="Administrator">
     <generalization xmi:type="uml:Generalization" xmi:id="_6MszsPOUEeeeCMacsBq8ZQ" general="_v-pEQPOUEeeeCMacsBq8ZQ"/>

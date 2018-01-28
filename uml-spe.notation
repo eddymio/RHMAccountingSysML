@@ -321,6 +321,11 @@
       <element xmi:type="uml:Package" href="uml-spe.uml#_jAbKUPVVEeeTqOPPkOB9GQ"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jAc_gfVVEeeTqOPPkOB9GQ" x="460" y="320" width="261"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_-k7CUAQVEei5_IWXSDYM-w" type="Comment_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-k_TwAQVEei5_IWXSDYM-w" type="Comment_BodyLabel"/>
+      <element xmi:type="uml:Comment" href="uml-spe.uml#_-khZsAQVEei5_IWXSDYM-w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-k7CUQQVEei5_IWXSDYM-w" x="640" y="180"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_jiqtUe8WEee3Xu0cSAu_nA" name="diagram_compatibility_version" stringValue="1.3.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_jiqtUu8WEee3Xu0cSAu_nA"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_jiqtU-8WEee3Xu0cSAu_nA" diagramKindId="org.eclipse.papyrus.uml.diagram.package">
