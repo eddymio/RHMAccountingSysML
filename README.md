@@ -4,6 +4,8 @@ This repository features all types of SysML/UML diagrams to cover all aspects of
 
 Including styles to this readme file with [Markdown](https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/Markdown%20Syntax.md title="Markdown") 
 
+git log --pretty=format:'%h was %an, %ar, message: %s' > CHANGELOG.md
+
 # Structure of the technical specifications
 
 A software is organized around functional and architectural aspects (see [Wikipedia](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model title="4+1 view"))
